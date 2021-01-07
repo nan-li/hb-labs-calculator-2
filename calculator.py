@@ -21,14 +21,23 @@ while True:
     elif user_equation[0] == "+":
         print(add(float(user_equation[1]), float(user_equation[2])))
 
-"""repeat forever:
-    read input
-    tokenize input
-        if the first token is "q":
-            quit
-        else:
-            (decide which math function to call based on first token)
-            if the first token is 'pow':
-                  call the power function with the other two tokens
+    elif user_equation[0] == "-":
+        print(subtract(float(user_equation[1]), float(user_equation[2])))
 
-            (...etc.)"""
+    elif user_equation[0] == "*":
+        print(multiply(float(user_equation[1]), float(user_equation[2])))
+
+    elif user_equation[0] == "/":
+        print(divide(float(user_equation[1]), float(user_equation[2])))
+
+    elif user_equation[0] == "square":
+        print(square(float(user_equation[1])))
+
+    elif user_equation[0] == "cube":
+        print(cube(float(user_equation[1])))
+
+    elif user_equation[0] == "power":
+        print(pow(float(user_equation[1]), float(user_equation[2])))
+
+    elif user_equation[0] == "mod":
+        print(mod(float(user_equation[1]), float(user_equation[2])))
